@@ -1,5 +1,15 @@
 funcAvalicacao = (lambda x: x**2-3*x+4)
 
+tm_bits = 10
+tm_pop = 10
+max_binario = 1023
+max_faixa = 10
+min_faixa = -10
+taxa_mut = 20
+usaElitismo = True
+qtd_geracoes = 1000
+posicao_corte = 7
+
 def gerarIndividuoStr(tm_bits):
     import random as rd
     val=''
@@ -85,15 +95,6 @@ def gerarCrossover(pai, mae, posicao_corte):
     filhos.append(filho2)
     return filhos
 
-tm_bits = 10
-tm_pop = 10
-max_binario = 1023
-max_faixa = 10
-min_faixa = -10
-taxa_mut = 20
-usaElitismo = True
-qtd_geracoes = 1000
-posicao_corte = 7
 
 pop_inicial = []
 nova_pop = []
